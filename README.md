@@ -1,4 +1,6 @@
-# AI- 2 - Print Phillip Goldberg
+# AI- 2 - Print
+
+Author: Phillip G.
 
 AI- 2 - Print would be a Text to File program that will generate a STL model which can be used to
 generate GCode that then can be used to 3D print the generated model.
