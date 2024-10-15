@@ -10,7 +10,7 @@ generate GCode that then can be used to 3D print the generated model.
 - 3D printing hobbyists who want to print generated models
 - 3D modelers and artists who want to build a model for a foundation
 - Engineers and hobbyists who are brainstorming concepts for a project
-- 
+
 **Motivation** :
 - AI-2-Print would make 3D printings and 3D modeling more enjoyable, adding a pathway
 from start to finish. It would give beginner and advanced users a foundation to build on
