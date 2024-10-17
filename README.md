@@ -34,4 +34,9 @@ The goals that I think are most achievable for this project are the following:
     consistent.
 3. Make Program Output to an organized file structure and render an image for each model.
 
+**Code** :
+
+> I used ChatGPT to generate sample code to learn how Shape-E Works.
+
+
 
