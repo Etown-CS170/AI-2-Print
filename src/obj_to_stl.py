@@ -1,3 +1,5 @@
+# A majority of this code was written by Google Gemini was researching solutions
+
 # git clone https://github.com/Nehri/slicing_algorithm.git
 
 # pip install pymeshlab

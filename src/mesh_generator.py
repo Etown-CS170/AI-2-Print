@@ -1,3 +1,5 @@
+# A majority of this code in this file was included in the Shap-e
+
 # --- Getting Shap-e and Slicing Algorithm Files ---
 # git clone https://github.com/openai/shap-e
 # git clone https://github.com/Nehri/slicing_algorithm.git
