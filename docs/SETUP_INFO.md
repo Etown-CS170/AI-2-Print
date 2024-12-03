@@ -21,7 +21,7 @@ through every step but if you want to try it yourself, I highly recommend it.
 ```
 !git clone https://github.com/Nehri/slicing_algorithm.git
 ```
-### **2.** Then you need to install Shap-e:
+### **2.** Then you need to install Shap-E:
 ```
 %cd /content/shap-e/
 !pip install -e.
