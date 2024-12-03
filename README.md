@@ -44,7 +44,7 @@ through every step but if you want to try it yourself, I highly recommend it.
 
 ### **1.** Get needed files
 - First you need to clone Shap-e from OpenAI’s repository:
-[https://github.com/openai/shap-e](https://github.com/openai/shap-e)
+[https://github.com/openai/shap-e](https://github.com/openai/shap-e.git)
 [https://github.com/Nehri/slicing_algorithm.git](https://github.com/Nehri/slicing_algorithm.git)
 ```
 !git clone https://github.com/openai/shap-e.git
@@ -53,7 +53,7 @@ through every step but if you want to try it yourself, I highly recommend it.
 ```
 !git clone https://github.com/Nehri/slicing_algorithm.git
 ```
-### **2.** Then you need to install Shap-e:
+### **2.** Then you need to install Shap-E:
 ```
 %cd /content/shap-e/
 !pip install -e.
