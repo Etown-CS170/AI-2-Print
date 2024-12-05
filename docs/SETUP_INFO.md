@@ -58,7 +58,7 @@ diffusion = diffusion_from_config(load_config('diffusion'))
 ### **7.** Setup Shap-e/Stable Diffusion Setting and User Prompt:
 ```
 batch_size = 1
-guidance_scale = 15, # this determines the freedom of the prompt, higher number means more accurate the description
+guidance_scale = 15, # this determines the freedom of the prompt, higher number means more accurate to the description
 prompt = "baby grand piano"  # area for user to type text prompt for mesh generation
 
 latents = sample_latents(
