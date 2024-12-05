@@ -30,7 +30,7 @@ CAD software or anything unrelated to generating the STL
 - AI-2-Print will use Sharp-E and OpenAI: https://github.com/openai/shap-e
 - Inline Gcode Generation
 
-# AI-2 -Print Setup Information 
+# AI-2-Print Setup Information 
 ## Written By: Phillip Goldberg
 
 These instructions have been tested to run on Google Colab with their provided resources. These
