@@ -1,10 +1,12 @@
 # This script takes in a .STL file, slices the model, generates GCode and then writes it to a .gcode file.
+# This File was made by the people who work on the slicing-algorithm project and I have modifed the printer dimension lines.
 
 import math
 import sys
 import string
 import copy
 
+#These are the lines I have edited
 #printer specific constants, should be suplied as args
 bedWidth = 220.0#mm     //my printers bed x and y dim
 extrudeWidth = 0.48#mm 

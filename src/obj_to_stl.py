@@ -2,12 +2,13 @@
 
 # git clone https://github.com/Nehri/slicing_algorithm.git
 
-# pip install pymeshlab
-# pip install numpy
-# pip install torch
-# pip install numpy-stl
-# pip install stlconverter
-# pip install colorama
+# --- Python Packages Needed ---
+# pip install pymeshlab # this is a library that deals with processing 3d meshes efficiently
+# pip install numpy # this is a library that deals with computation
+# pip install torch # this is the library that deals with the machine learning computation
+# pip install numpy-stl # this library adds stl functionality to numPy
+# pip install stlconverter # this is used to convert between ASCII and Binary STL files
+# pip install colorama # this allows color ASCII text in console and is a dependency for the slicing-algorithm project
 
 import pymeshlab
 

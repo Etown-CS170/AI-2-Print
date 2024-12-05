@@ -60,12 +60,12 @@ through every step but if you want to try it yourself, I highly recommend it.
 ```
 ### **3.** Then you need to install required python packages using pip:
 ```
-!pip install pymeshlab
-!pip install numpy
-!pip install torch
-!pip install numpy-stl
-!pip install stlconverter
-!pip install colorama
+!pip install pymeshlab # this is a library that deals with processing 3d meshes efficiently
+!pip install numpy # this is a library that deals with computation
+!pip install torch # this is the library that deals with the machine learning computation
+!pip install numpy-stl # this library adds stl functionality to numPy
+!pip install stlconverter # this is used to convert between ASCII and Binary STL files
+!pip install colorama # this allows color ASCII text in console and is a dependency for the slicing-algorithm project
 ```
 ### **4.** Now you need to import the libraries required:
 ```
@@ -79,7 +79,7 @@ from shap_e.util.notebooks import create_pan_cameras, decode_latent_images, gif_
 ```
 ### **5.** Set torch to use your GPU instead of CPU for faster processing:
 ```
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # This line sets torch to use a GPU for much faster processing
 ```
 ### **6.** Set the Stable Diffusion Models:
 ```
@@ -90,7 +90,7 @@ diffusion = diffusion_from_config(load_config('diffusion'))
 ### **7.** Setup Shap-e/Stable Diffusion Setting and User Prompt:
 ```
 batch_size = 1
-guidance_scale = 15,
+guidance_scale = 15, # this determines the freedom of the prompt, higher number means more accurate the description
 prompt = "baby grand piano"  # area for user to type text prompt for mesh generation
 
 latents = sample_latents(
@@ -99,18 +99,19 @@ latents = sample_latents(
     diffusion=diffusion,
     guidance_scale=guidance_scale,
     model_kwargs=dict(texts=[prompt] * batch_size),
-    progress=True,
-    clip_denoised=True,
-    use_fp16=True,
-    use_karras=True,
+    progress=True, # shows user how far along the process is "In this case a progress bar"
+    clip_denoised=True, # this important to get rid of numbers outside range for usable outputs
+    use_fp16=True, # this sets the model to use 16-bit floating point precision when the model does computations
+    use_karras=True, # enables the model to use karras steps
     karras_steps=20, # this sets the amount of noise in processing the mesh
-    sigma_min=1e-3,
-    sigma_max=160,
-    s_churn=0,
+    sigma_min=1e-3, # this sets the minimum amount of noise the model can use when sampling
+    sigma_max=160, # this the same but for the maximum
+    s_churn=0, # controls the level of variability in the sampling process which can diversify the "creativity" of the outputs
 )
 ```
 ### **8.** Write the Generated Mesh to OBJ File:
 ```
+# --- this code decodes latents into a mesh, and then writes the meshes data to an OBJ file ---
 for i, latent in enumerate(latents):
     t = decode_latent_mesh(xm, latent).tri_mesh()
     with open(f'mesh_{i}.obj', 'w') as f:
