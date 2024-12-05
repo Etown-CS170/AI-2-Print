@@ -1,6 +1,6 @@
 # AI-2-Print
 
-### Author: Phillip G.
+### Author: Phillip Goldberg
 Current Link to Google Colab Project: [https://colab.research.google.com/drive/1nUvgsUbuIkZI1YrLPkZEtEjvjagQKHPV?usp=sharing](https://colab.research.google.com/drive/1nUvgsUbuIkZI1YrLPkZEtEjvjagQKHPV?usp=sharing)
 
 - Code for generating models is mostly from included files in the Shap-E Repository.
