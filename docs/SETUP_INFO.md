@@ -55,7 +55,7 @@ xm = load_model('transmitter', device=device)
 model = load_model('text300M', device=device)
 diffusion = diffusion_from_config(load_config('diffusion'))
 ```
-### **7.** Setup Shap-e/Stable Diffusion Setting and User Prompt:
+### **7.** Setup Shap-E/Stable Diffusion Setting and User Prompt:
 ```
 batch_size = 1
 guidance_scale = 15, # this determines the freedom of the prompt, higher number means more accurate to the description
